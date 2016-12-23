@@ -112,7 +112,7 @@
 		  <tr>	
 			<td>		
 				<li style="margin: 30px 10px 0; font-weight: bold"><span>顯示建議：</span>Chrome、IE 9.0、Firefox 3.5 以上 1024x768 以上解析度</li>
-				<li style="margin: 10px 10px 30px; font-weight: bold"><span>系統版本： 0.0.0.{{ explode(' ',Config::get('version.version','   '))[1] }}</span></li>							
+                <li style="margin: 10px 10px 30px; font-weight: bold"><span>系統版本： 0.0.0.{{ exec('git rev-list --count HEAD') }} ({{exec('git rev-parse --short HEAD')}})</span></li>							
 			</td>
 		  </tr>
 		</table>
