@@ -26,7 +26,7 @@
         }
 
         .contentbody {
-            padding-top: 30px;
+            padding-top: 80px;
             padding-bottom: 10px;
         }
 
@@ -98,6 +98,48 @@
             text-decoration:none;
         }
 
+        .navbar-default .navbar-nav>li>a {
+            color: white !important;
+        }
+
+        .navbar-default .navbar-nav>li>a:hover {
+            background-color: #2e82d7;
+            color: white;
+        }
+
+        .navbar-default .navbar-nav>.open>a,
+        .navbar-default .navbar-nav>.open>a:hover,
+        .navbar-default .navbar-nav>.open>a:focus {
+            background-color: #0c60b5;
+        }
+
+        .navbar-default .navbar-toggle {
+            background-color: #1d71c6;
+        }
+
+        .navbar-default .navbar-toggle:hover {
+            background-color: #2e82d7;
+        }
+
+        .navbar-default .navbar-toggle:focus {
+            background-color: #0c60b5;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+                color: white;
+            }
+
+            .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+                background-color: #4093e8;
+                color: white;
+            }
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: white;
+        }
+
         /*.catmore:visited{
             color:green;
             background-color:transparent;
@@ -110,7 +152,7 @@
     
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #1d71c6; border-color: #0c60b5;">
         <div class="container">
             <div class="navbar-header">
 
@@ -123,8 +165,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                <a class="navbar-brand" href="{{ url('/') }}" style="color: white">
+                    BOX
                 </a>
             </div>
 
