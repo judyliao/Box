@@ -9,9 +9,11 @@
 
     
     <!-- Styles -->
-    <link href="{{ asset('/css/vendor/font-awesome.min.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('/css/vendor/font-awesome.min.css') }}" rel="stylesheet"> --}}
 	<link href="{{ asset('/css/vendor/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/vendor/modern-business.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/customer/better-button.css') }}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
     <!--JavaScripts-->
     <script src="{{ asset('/js/vendor/jquery-3.1.1.min.js') }}"></script>
@@ -21,6 +23,11 @@
     <style>
         body {
             font-family: 'Microsoft Jhenghei UI';
+        }
+
+        .contentbody {
+            padding-top: 30px;
+            padding-bottom: 10px;
         }
 
         .fa-btn {
@@ -36,6 +43,69 @@
 			color: #bfbfbf;
 			box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
+
+        .thumbnail img {
+            width: 100%;
+        }
+
+        .ratings {
+            padding-right: 10px;
+            padding-left: 10px;
+            color: #d17581;
+        }
+
+        .thumbnail {
+            padding: 0;
+        }
+
+        .thumbnail .caption-full {
+            padding: 9px;
+            color: #333;
+        }
+
+        .cattitle-lg{
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        .cattitle-md{
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .catmore{
+            float:right;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 0 0 0;
+        }
+
+        .catmore:link{
+            color: #ffa64d;
+            background-color:transparent;
+            text-decoration:none;
+        }
+
+        .catmore:hover{
+            color:#ff8c1a;
+            background-color:transparent;
+            text-decoration:none;
+        }
+
+        .catmore:active{
+            color: #e67300;
+            background-color:transparent;
+            text-decoration:none;
+        }
+
+        /*.catmore:visited{
+            color:green;
+            background-color:transparent;
+            text-decoration:none;
+        }*/
+
+        
+      
     </style>
     
 </head>
@@ -112,7 +182,7 @@
 		  <tr>	
 			<td>		
 				<li style="margin: 30px 10px 0; font-weight: bold"><span>顯示建議：</span>Chrome、IE 9.0、Firefox 3.5 以上 1024x768 以上解析度</li>
-                <li style="margin: 10px 10px 30px; font-weight: bold"><span>系統版本： 0.0.0.{{ exec('git rev-list --count HEAD') }} ({{exec('git rev-parse --short HEAD')}})</span></li>							
+                <li style="margin: 10px 10px 30px; font-weight: bold"><span>系統版本： 0.1.0.{{ exec('git rev-list --count HEAD') }} ({{exec('git rev-parse --short HEAD')}})</span></li>							
 			</td>
 		  </tr>
 		</table>
