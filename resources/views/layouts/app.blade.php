@@ -81,7 +81,7 @@
         }
 
         .catmore:link{
-            color: #ffa64d;
+            
             background-color:transparent;
             text-decoration:none;
         }
