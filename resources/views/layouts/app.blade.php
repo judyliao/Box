@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>BOX 巴克斯 購物平台</title>
 
     
     <!-- Styles -->
@@ -140,6 +140,27 @@
             background-color: white;
         }
 
+        .location {
+            background: url(img/ic_location_on_black.png) no-repeat;
+            width: 24px;
+            height: 24px;
+            padding-left: 30px;
+        }
+
+        .phone {
+            background: url(img/ic_phone_black.png) no-repeat;
+            width: 24px;
+            height: 24px;
+            padding-left: 30px;
+        }
+
+        .clock {
+            background: url(img/ic_clock_black.png) no-repeat;
+            width: 24px;
+            height: 24px;
+            padding-left: 30px;
+        }
+
         /*.catmore:visited{
             color:green;
             background-color:transparent;
@@ -166,7 +187,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}" style="color: white">
-                    BOX
+                    BOX 巴克斯
                 </a>
             </div>
 
@@ -180,22 +201,19 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     <li>
-                        <a href="about.html">關於我們</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">聯絡資訊</a>
-                    </li>                    
+                        <a href="{{ url('/about') }}">關於我們</a>
+                    </li>                  
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">商品 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
+                                <a href="blog-home-1.html">BOX</a>
                             </li>
                             <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
+                                <a href="blog-home-2.html">Company 1</a>
                             </li>
                             <li>
-                                <a href="blog-post.html">Blog Post</a>
+                                <a href="blog-post.html">Company 2</a>
                             </li>
                         </ul>
                     </li>                    
